@@ -1,0 +1,78 @@
+<div class="full-page">
+    <div class="user-notes">
+        <div class="user-weather">
+            <div class="user-info">
+                <div class="card mb-3 custom-card" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="img/image 15.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="name">{{name}}</h5>
+                          <p class="email">{{email}}</p>
+                          <p class="user-name">{{userName}}</p>
+                          <p class="cat-details">
+                            @for (item of array; track $index) {
+                              <div class="cat-sel">
+                                {{item}}
+                            </div>
+                            }
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="weather">
+              <div class="date-time">
+                <div class="date">{{currentDate | date:'dd-MM-yyyy'}}</div>
+                <div class="time">{{currentDate|date:'hh:mm a'}}</div>
+              </div>
+              
+              <div class="weather-section">
+                <div class="weather-part">
+                  <p>weather:</p>
+                  @if ( weather.timelines.daily[0].values.temperatureApparentAvg >22) {
+                    <i class="bi bi-sun icon-large"></i>
+                  }@else {
+                    <i class="bi bi-cloud-sun icon-large"></i>
+                  }
+                </div>
+                <div class="weather-part">
+                  <p>temperature: </p>
+                  <p>  {{ weather.timelines.daily[0].values.temperatureApparentAvg }}</p>
+                </div>
+                <div class="weather-part">
+                  <p>humidity:</p>
+                  <p class="p">   {{ weather.timelines.daily[0].values.humidityAvg}}</p>
+                </div>
+                <div class="weather-part"> 
+                  <p>wind:</p>
+                  <p>    {{ weather.timelines.daily[0].values.windGustAvg}} </p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="notes">
+
+          <h1>All Notes</h1>
+          <textarea class="text-area" [rows]="15" [cols]="20"></textarea>
+        </div>
+    </div>
+    <div class="news">
+      <img class="cricket-img" src="img/cricket.avif" alt="">
+      <h1 class="tittle">{{news.news[0].title}}</h1>
+      <p class="news-p">{{news.news[0].text.slice(0,300)}}....</p>
+      
+    </div>
+    <div class="bx">
+      <p class="p-textt">hey!folk,thanks for showing faith in and choosing our app. We are glad to help you. If you want to see our team than click on about button</p>
+    </div>
+    <div>
+      <button class="btn" type="submit" id="about" routerLink="/about">About Us</button>
+    </div>
+    
+    
+    
+  </div>

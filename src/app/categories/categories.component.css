@@ -1,0 +1,125 @@
+.full-page {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.super-app {
+    color: #72DB73;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+
+.display-category{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+.cat-sel{
+    height: 40px;
+    width: 100px;
+    border-radius: 25px;
+    background-color: #72DB73;
+    padding: 7px;
+    padding-left: 12px;
+    color: white;
+    font-size: 1rem;
+}
+
+.error{
+    color: red;
+    margin-top: 5rem;
+}
+
+.text {
+    color: white;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 0;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 2rem;
+}
+
+.category-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;
+    width: 80%;
+}
+
+.movies {
+    color: white;
+    width: 135px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.movies:hover {
+    transform: scale(1.1);
+}
+
+
+.movie-name {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.image img {
+    width: 100%;
+    height: 110px; 
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.next-page {
+    background-color: #148A08;
+    height: 40px;
+    width: 120px; 
+    border-radius: 25px;
+    margin-top: 500px; /* Position it below the movies */
+    align-self: center; /*Center it horizontally*/
+    margin-left: -130px;
+    color: white;
+    font-size: 1.2rem;
+   
+    border: none;
+
+}
+
+.next-page:hover {
+    background-color: #117602; 
+}
+
+
+
+

@@ -1,0 +1,214 @@
+.full-page{
+    background-color: black;
+    height: 100vh;
+    padding: 5px; 
+}
+
+
+.custom-card {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.img-fluid {
+    margin: 10px;
+}
+.card{
+    
+    margin-left: 15px;
+    background-color:#5746EA;
+}
+
+.cat-details{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+.cat-sel{
+    height: 40px;
+    width: 100px;
+    border-radius: 25px;
+    background-color: #9F94FF;
+    padding: 7px;
+    padding-left: 12px;
+    color: white;
+    font-size: 1rem;
+}
+
+.name{
+    color: white;
+    font-size: 25px;
+}
+
+.email{
+    margin-top: -1px;
+    color: white;
+    font-size: 25px;
+}
+
+.user-name{
+    margin-top: -10px;
+    color: white;
+    font-size: 40px;
+}
+
+.weather{
+    height:200px ;
+    width: 540px;
+    background-color:#101744;
+    margin: 15px;
+    border-radius: 5px;
+    color: white;
+}
+.date-time{
+    background-color: #FF4ADE;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.date{
+    margin-left: 100px;
+    color: white;
+    font-weight: 900;
+    font-size: x-large;
+    color: white;
+}
+.time{
+    margin-right: 100px;
+    color: white;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.weather-section {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    
+}
+
+.weather-part {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.weather-part p {
+    margin: 0; /* Removes margin to ensure proper spacing */
+}
+
+.bi{
+    width:50px ;
+    height:50px ;
+}
+.icon-large {
+    font-size: 3rem;
+}
+
+.notes {
+    background-color: #F1C75B;
+    height: 70vh;
+    width: 35vh;
+    margin-left: 600px;
+    margin-top: -535px;
+    border-radius: 5px;
+    overflow-y: auto; /* Handle overflow */
+}
+
+.text-area {
+    margin-left: 5px;
+    border-color: #F1C75B;
+    background-color: #F1C75B;
+    resize: none; /* Prevent resizing */
+    font-size: larger;
+    height: 450px;
+}
+
+.notes h1 {
+    text-align: center;
+}
+
+
+.news{
+    background-color: aqua;
+    height: 9700px;
+    width: 400px;
+    margin-left:920px ;
+    margin-top: -512px;
+    border-radius: 10px;
+
+}
+
+.news {
+    
+    height: 650px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:slategray;
+}
+
+.news img {
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.news .tittle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.cricket-img{
+    width: 100%;
+    height: 35%;
+    object-fit: cover;
+}
+
+#about{
+    background-color: #148A08;
+    height: 40px;
+    width: 130px;
+    border-radius: 25px;
+    color: #ffffff; /* Ensures text is visible on the green background */
+    border: none; /* Removes any default border */
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.bx{
+    height: 95px;
+    width: 850px;
+    margin-top: -90px;
+    margin-left: 15px;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+.p-textt{
+    color: #333;
+    font-size:x-large;
+    text-align: center;
+
+}
+
+.news-p{
+    color: silver;
+}

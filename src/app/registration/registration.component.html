@@ -1,0 +1,63 @@
+
+<div class="full-page">
+    <div class="image-part">
+        <img class="image" src="img/image 13.png" alt="">
+        <h1>Discover new things on Superapp</h1>
+    </div>
+    <div class="form-part">
+        <h1 >Super App</h1>
+        <p>Create your new account</p>
+        <div>
+            <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+                
+                <div>
+                    <label for="name"></label>
+                    <input id="name" type="text" formControlName="name" placeholder="Name">
+                    <div *ngIf="registrationForm.controls['name'].touched" class="error">
+                        <div *ngIf="registrationForm.controls['name'].hasError('required')">Name is required</div>
+                        <div *ngIf="registrationForm.controls['name'].hasError('minlength')">Name is too short</div>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="userName"></label>
+                    <input id="userName" type="text" formControlName="userName" placeholder="Username">
+                    <div *ngIf="registrationForm.controls['userName'].touched" class="error">
+                        <div *ngIf="registrationForm.controls['userName'].hasError('required')">Username is required</div>
+                        <div *ngIf="registrationForm.controls['userName'].hasError('minlength')">Username is too short</div>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="email"></label>
+                    <input id="email" type="text" formControlName="email" placeholder="Email">
+                    <div *ngIf="registrationForm.controls['email'].touched" class="error">
+                        <div *ngIf="registrationForm.controls['email'].hasError('required')">Email is required</div>
+                        <div *ngIf="registrationForm.controls['email'].hasError('email')">Invalid email format</div>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="mobile"></label>
+                    <input id="mobile" type="text" formControlName="mobile" placeholder="Mobile">
+                    <div *ngIf="registrationForm.controls['mobile'].touched" class="error">
+                        <div *ngIf="registrationForm.controls['mobile'].hasError('required')">Mobile number is required</div>
+                        <div *ngIf="registrationForm.controls['mobile'].hasError('maxlength')">Mobile number is too long</div>
+                    </div>
+                </div>
+
+                <div>
+                    <label id="check" for="checkbox">Share my registration data with Superapp</label>
+                    <input id="checkbox" type="checkbox" formControlName="checkbox">
+                    <div *ngIf="registrationForm.controls['checkbox'].invalid && registrationForm.controls['checkbox'].touched" class="error">
+                        <div *ngIf="registrationForm.controls['checkbox'].hasError('required')">You must agree to share data</div>
+                    </div>
+                </div>
+
+                <button type="submit" routerLink="/category" >SIGN UP</button>
+                <p>By clicking on Sign up, you agree to Superapp Terms and Conditions of Use</p>
+
+            </form>
+        </div>
+    </div>
+</div>

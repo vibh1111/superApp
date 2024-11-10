@@ -1,0 +1,85 @@
+<div class="full-page">
+    <div class="left-side">
+        <div class="super-app">
+            <h1>Super App</h1>
+        </div>
+        <div class="text">
+            <p>Choose your entertainment category</p>
+        </div>
+            <div class="display-category">
+                @for (item of selectedCategories; track $index) {
+                    <div class="cat-sel" (click)="select(item)">
+                        {{item}}
+                    </div>
+                } 
+            </div>
+            @if (displayError) {
+                <div class="error">
+                    Minimum 3 category required
+                </div>
+            }
+            
+    </div>
+    <div class="right-side"> 
+        <div class="category-options">
+            <div class="movies" (click)="select('Action')">
+                <div class="movie-name">Action</div>
+                <div class="image">
+                    <img src="img/action.jpg" >
+                </div> 
+            </div>
+            <div class="movies" (click)="select('Adventure')">
+                <div class="movie-name">Adventure</div>
+                <div class="image">
+                    <img src="img/adventure.webp" >
+                </div>
+            </div>
+            <div class="movies" (click)="select('Bollywood')">
+                <div class="movie-name">Bollywood</div>
+                <div class="image">
+                    <img src="img/bollywood.jpg" >
+                </div>
+            </div>
+            <div class="movies" (click)="select('Drama')">
+                <div class="movie-name">Drama</div>
+                <div class="image">
+                    <img src="img/drama.webp" >
+                </div>
+            </div>
+            <div class="movies" (click)="select('Horror')" >
+                <div class="movie-name">Horror</div>
+                <div class="image">
+                    <img src="img/horror.jpg" >
+                </div>
+            </div>
+            <div class="movies" (click)="select('Music')">
+                <div class="movie-name">Music</div>
+                <div class="image">
+                    <img src="img/music.webp" >
+                </div>
+            </div>
+            <div class="movies" (click)="select('Romance')">
+                <div class="movie-name">Romance</div>
+                <div class="image">
+                    <img src="img/romance.jpg" >
+                </div>
+            </div>
+            <div class="movies" (click)="select('Sci-Fi')">
+                <div class="movie-name">Sci-Fi</div>
+                <div class="image">
+                    <img src="img/sci-fi.png" >
+                </div>
+            </div>
+            <div class="movies" (click)="select('Thriller')">
+                <div class="movie-name">Thriller</div>
+                <div class="image">
+                    <img src="img/thriller.jpg" >
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="next-page" (submit)="submitingCategories()" (click)="checking()" routerLink="/home">Next Page</button>
+        
+
+    </div>
+    
+</div>
